@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*******************when touch nav bar get smooth scrol option*******************/
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/***********************************Navbar******************************************/
+.navbar-meun-toggle {
+    display: none;
+}
+
+.navbar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bs-white);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+/********************************side-Navbar******************************************/
+.side-navbar {
+    background-color: var(--bs-gray-900);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 79px;
+    left: -50%;
+    padding: 20px;
+    color: var(--bs-white);
+    transition: 1s;
+}
+
+.side-nav-links a {
+    margin-bottom: 27px;
+}
+
+.side-nav-links a:hover {
+    text-decoration: underline;
+}
+
+.cross-logo {
+    color: var(--bs-white);
+    text-align: right;
+}
+
+/***********************************header**************************************/
+.our-content {
+    margin: 150px;
+}
+
+#home-header {
+    top: -69px;
+    position: relative;
+    background-image: url(../image/bg-banner.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+/**********************************services*************************************/
+.customerexp h2 {
+    width: 60%;
+}
+
+.exp-details {
+    width: 32% !important;
+    margin-left: 14px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 40px 0;
+}
+
+.shop-btn button {
+    margin-left: 35px;
+    animation: bouncey 2s ease-in-out infinite alternate;
+}
+
+.col-4 {
+    margin: 5px;
+}
+
+.collections h2 {
+    text-align: center;
+}
+
+.collections h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background-color: blue;
+    margin: 8px auto;
+}
+
+@keyframes bouncey {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translatey(10px);
+    }
+}
+
+.collections .row {
+    /* background-color: aqua; */
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+/**********************************brands****************************************/
+.logo-name {
+    margin: 10px;
+    border: 2px solid var(--bs-dark);
+    border-radius: 10px;
+}
+
+/**********************************footer*******************************************/
+ul li {
+    cursor: pointer;
+    margin: 5px;
+    color: var(--bs-gray-500);
+}
+
+ul li:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    color: var(--bs-gray-500)
+}
+
+.border-line {
+    width: 79% !important;
+    margin-left: 130px;
+    content: "";
+    height: 1px;
+    background-color: var(--bs-gray-500);
+}
+
+
+/***********************************Media Query**************************************/
+@media screen and (max-width:700px) {
+    .navbar-meun-toggle {
+        display: block;
+    }
+
+    .nav-links .nav-link {
+        display: none;
+    }
+
+    #home-header {
+        height: 30vh;
+    }
+
+    .navbar-menu {
+        width: 100%;
+    }
+
+    .exp-details {
+        width: 95% !important;
+    }
+
+    .collections-details {
+        width: 70% !important;
+    }
+
+    .brand-logo {
+        text-align: center;
+    }
+
+    .border-line {
+        width: 50% !important;
+        margin-left: 100px;
+    }
+        .reveal {
+        transform: translateY(15px);
+    }
+
+    #home-navbar {
+        opacity: 1;
+        transform: none;
+    }
+}

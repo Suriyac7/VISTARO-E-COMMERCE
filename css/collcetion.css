@@ -1,0 +1,18 @@
+.search-btn{
+    width: 85%;
+    margin: auto;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--bs-black);
+    gap: 10px;
+}
+.search-btn input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+.search-btn input:hover{
+    outline: none;  
+}

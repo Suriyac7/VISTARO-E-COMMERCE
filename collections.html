@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistaro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/collcetion.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <section id="home-navbar">
+        <div class="navbar-menu">
+            <nav class="navbar shadow p-4 rounded ">
+                <div class="container-fluid">
+                    <div class="logo"><img src="./image/Vistaro Store Logo.png" alt="store-logo" width="120px"
+                            height="30px"></div>
+                    <div class="nav-links d-flex gap-3">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="collections.html" class="nav-link">Collections</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <div class="navbar-meun-toggle" onclick="showNavbar()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="side-navbar">
+                <div class="cross-logo"><i class="fa-solid fa-xmark" onclick="closeNavbar()"></i></div>
+                <div class="side-nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="collections.html" class="nav-link">Collections</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="collections">
+        <div class="shop-collection container">
+            <div class="row">
+                <div class="collections">
+                    <h2 class="mt-5 pt-5">OUR COLLECTIONS</h2>
+                    <div class="search-btn">
+                        <form action="" class="d-flex justify-content-between aline-items-center">
+                            <input type="text" placeholder="search..." id="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="./image/cotton-hoodies.jpg" alt="cotton-hoodies">
+                            <h4>Cotton Hoodies</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="btn btn-danger">Rs.899/-</p>
+                            <div class="shop">
+                                <button class="btn btn-primary">Add card<i
+                                        class="fa-solid fa-arrow-right-long mx-2"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="./image/formal-pants.jpg" alt="formal-pants">
+                            <h4>Formal Pants</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="btn btn-danger">Rs.799/-</p>
+                            <div class="shop">
+                                <button class="btn btn-primary">Add card<i
+                                        class="fa-solid fa-arrow-right-long mx-2"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="./image/men-cargo.jpg" alt="men-cargo">
+                            <h4>Men Cargo</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="btn btn-danger">Rs.499/-</p>
+                            <div class="shop">
+                                <button class="btn btn-primary">Add card<i
+                                        class="fa-solid fa-arrow-right-long mx-2"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="./image/men-formal.jpg" alt="men-formal">
+                            <h4>Men Formal</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="btn btn-danger">Rs.699/-</p>
+                            <div class="shop">
+                                <button class="btn btn-primary">Add card<i
+                                        class="fa-solid fa-arrow-right-long mx-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collections">
+                    <div class="row cloths-collections">
+                        <div class="col-lg-3">
+                            <img src="./image/women-blouse.jpg" alt="women-blouse">
+                            <h4>Women Blouse</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="btn btn-danger">Rs.999/-</p>
+                            <div class="shop">
+                                <button class="btn btn-primary">Add card<i
+                                        class="fa-solid fa-arrow-right-long mx-2"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="./image/women-jeans.jpg" alt="women-jeans">
+                            <h4>Women Jeans</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="btn btn-danger">Rs.399/-</p>
+                            <div class="shop">
+                                <button class="btn btn-primary">Add card<i
+                                        class="fa-solid fa-arrow-right-long mx-2"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="./image/men-tshirts.jpg" alt="men-tshirts">
+                            <h4>Men Tshirts</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="btn btn-danger">Rs.499/-</p>
+                            <div class="shop">
+                                <button class="btn btn-primary">Add card<i
+                                        class="fa-solid fa-arrow-right-long mx-2"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="./image/women-pants.jpg" alt="women-pants">
+                            <h4>Women Pants</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="btn btn-danger">Rs.599/-</p>
+                            <div class="shop">
+                                <button class="btn btn-primary">Add card<i
+                                        class="fa-solid fa-arrow-right-long mx-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="footer" class="container-fluid">
+        <div class="contacts-section">
+            <div class="row pt-5 bg-dark text-white text-center">
+                <div class="col-lg-4">
+                    <h3>Download our App</h3>
+                    <p class="text-end me-2">Download App for Android and ios mobile phone.</p>
+                    <img src="./image/play-store.png" alt="play-store" width="120px" height="40px">
+                    <img src="./image/app-store.png" alt="app-store" width="120px" height="40px">
+                </div>
+                <div class="col-lg-3">
+                    <img src="./image/Vistaro Store Logo.png" alt="" width="120px" height="30px" class="mb-4 mt-2">
+                    <p>Our Purpose Is To Sustainably Make th Pleasure and Benefits of fashion cloths to the Many.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h3>Useful Links</h3>
+                    <ul class="list-unstyled">
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h3>Follow us</h3>
+                    <ul class="list-unstyled curser-pointer">
+                        <li>Facebook <i class="fa-brands fa-square-facebook"></i></li>
+                        <li>Twitter <i class="fa-brands fa-square-twitter"></i></li>
+                        <li>Instagram <i class="fa-brands fa-square-instagram"></i></li>
+                        <li>Youtube <i class="fa-brands fa-square-youtube"></i></li>
+                    </ul>
+                </div>
+                <div class="border-line"></div>
+                <div class="copyright mt-4">
+                    <p><i class="fa-regular fa-copyright"></i></i>Copyright- All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./javascript/index.js"></script>
+    <script src="./javascript/collectiona.js"></script>
+</body>
+
+</html>
